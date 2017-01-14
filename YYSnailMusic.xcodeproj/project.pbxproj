@@ -87,6 +87,8 @@
 		0BE80B121E28EA2000FE2E3B /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BE80AC71E28EA2000FE2E3B /* SVProgressHUD.bundle */; };
 		0BE80B131E28EA2000FE2E3B /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE80AC91E28EA2000FE2E3B /* SVProgressHUD.m */; };
 		0BE80B141E28EA2000FE2E3B /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE80ACB1E28EA2000FE2E3B /* SVRadialGradientLayer.m */; };
+		0BE80B2A1E2A718D00FE2E3B /* YYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE80B271E2A718D00FE2E3B /* YYBaseViewController.m */; };
+		0BE80B2B1E2A718D00FE2E3B /* YYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE80B291E2A718D00FE2E3B /* YYNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -244,6 +246,10 @@
 		0BE80AC91E28EA2000FE2E3B /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		0BE80ACA1E28EA2000FE2E3B /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		0BE80ACB1E28EA2000FE2E3B /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		0BE80B261E2A718D00FE2E3B /* YYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBaseViewController.h; sourceTree = "<group>"; };
+		0BE80B271E2A718D00FE2E3B /* YYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBaseViewController.m; sourceTree = "<group>"; };
+		0BE80B281E2A718D00FE2E3B /* YYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYNavigationController.h; sourceTree = "<group>"; };
+		0BE80B291E2A718D00FE2E3B /* YYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +319,10 @@
 		0BE80A0E1E28E10A00FE2E3B /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0BE80B261E2A718D00FE2E3B /* YYBaseViewController.h */,
+				0BE80B271E2A718D00FE2E3B /* YYBaseViewController.m */,
+				0BE80B281E2A718D00FE2E3B /* YYNavigationController.h */,
+				0BE80B291E2A718D00FE2E3B /* YYNavigationController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -850,7 +860,9 @@
 				0BE80AD81E28EA2000FE2E3B /* UIButton+AFNetworking.m in Sources */,
 				0BE80ADB1E28EA2000FE2E3B /* UIRefreshControl+AFNetworking.m in Sources */,
 				0BE80B101E28EA2000FE2E3B /* SVIndefiniteAnimatedView.m in Sources */,
+				0BE80B2A1E2A718D00FE2E3B /* YYBaseViewController.m in Sources */,
 				0BE80ADC1E28EA2000FE2E3B /* UIWebView+AFNetworking.m in Sources */,
+				0BE80B2B1E2A718D00FE2E3B /* YYNavigationController.m in Sources */,
 				0BE80B001E28EA2000FE2E3B /* NSData+ImageContentType.m in Sources */,
 				0BE80B0A1E28EA2000FE2E3B /* UIImage+MultiFormat.m in Sources */,
 				0BE80AFB1E28EA2000FE2E3B /* UIScrollView+MJRefresh.m in Sources */,

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "YYHomeViewController.h"
 #import "YYNavigationController.h"
+#import "YYLeftMenuController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +21,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[YYNavigationController alloc]initWithRootViewController:[YYHomeViewController new]];
+    
+    //左侧菜单栏
+    YYLeftMenuController* leftMenuVC = [[YYLeftMenuController alloc]init];
+
+    //导航栏
+    YYNavigationController* navController = [[YYNavigationController alloc]initWithRootViewController:[[YYHomeViewController alloc]init]];
+    
+    self.revealController = [PKRevealController revealControllerWithFrontViewController:navController leftViewController:leftMenuVC];
+    
+    self.window.rootViewController = self.revealController;
     
     [self.window makeKeyAndVisible];
+    
+    
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    //设置字体颜色
+    navBar.tintColor = [UIColor whiteColor];
+    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor],
+                                     NSFontAttributeName: [UIFont systemFontOfSize:20]}];
     
     return YES;
 }
